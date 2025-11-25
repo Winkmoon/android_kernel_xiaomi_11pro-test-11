@@ -99,7 +99,7 @@ jobs:
         run: |
           cd kernel_workspace
           cd common
-          patch -p1 < /path/to/ksu_hooks_sukisu_11pro.patch
+          patch -p1 < ksu_hooks_sukisu_11pro.patch
           #echo "CONFIG_KSU=y" >> ./arch/arm64/configs/vendor/star_defconfig
           #echo "CONFIG_KSU_MANUAL_HOOK=y" >> ./arch/arm64/configs/vendor/star_defconfig
           sed -i 's/check_defconfig//' ./build.config.gki
